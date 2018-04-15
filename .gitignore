@@ -32,7 +32,6 @@ ext/sparsehash.cpp
 _build/
 .env/
 tmp/
-cythonize.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -42,20 +41,20 @@ __pycache__/
 *.so
 
 # Distribution / packaging
-.Python
-env/
-build/
-develop-eggs/
-dist/
-eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-*.egg-info/
-.installed.cfg
-*.egg
+# .Python
+# env/
+# build/
+# develop-eggs/
+# dist/
+# eggs/
+# lib/
+# lib64/
+# parts/
+# sdist/
+# var/
+# *.egg-info/
+# .installed.cfg
+# *.egg
 
 # Installer logs
 pip-log.txt
