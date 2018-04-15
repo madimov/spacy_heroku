@@ -1,0 +1,36 @@
+//- 💫 CSS > COMPONENTS > LISTS
+
+//- List Container
+
+.c-list
+    @each $type, $counter in (numbers: decimal, letters: upper-latin, roman: lower-roman)
+        &.c-list--#{$type}
+            counter-reset: li
+
+            .c-list__item:before
+                content: counter(li, #{$counter}) '.'
+
+
+//- List Item
+
+.c-list__item
+    padding-left: 2rem
+    margin-bottom: 0.5em
+    margin-left: 1.25rem
+
+    &:before
+        content: '\25CF'
+        display: inline-block
+        font-size: 1em
+        font-weight: bold
+        padding-right: 1.25rem
+        margin-left: -3.75rem
+        text-align: right
+        width: 2.5rem
+        counter-increment: li
+
+
+//- List icon
+
+.c-list__icon
+    margin-right: 1rem

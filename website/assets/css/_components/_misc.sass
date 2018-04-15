@@ -1,0 +1,42 @@
+//- 💫 CSS > COMPONENTS > MISC
+
+.x-terminal
+    background: $color-subtle-light
+    color: $color-front
+    padding: 4px
+    border: 1px dotted $color-subtle
+    border-radius: 5px
+    width: 100%
+
+.x-terminal__icons
+    position: absolute
+    padding: 10px
+
+    &:before,
+    &:after,
+    span
+        @include size(15px)
+        display: inline-block
+        float: left
+        border-radius: 50%
+        margin-right: 10px
+
+    &:before
+        content: ""
+        background: $color-red
+
+    span
+        background: $color-green
+
+    &:after
+        content: ""
+        background: $color-yellow
+
+.x-terminal__code
+    margin: 0
+    border: none
+    border-bottom-left-radius: 5px
+    border-bottom-right-radius: 5px
+    width: 100%
+    max-width: 100%
+    white-space: pre-wrap

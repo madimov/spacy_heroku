@@ -1,0 +1,40 @@
+{
+    "index": {
+        "landing": true,
+        "logos": [
+            {
+                "quora": [ "https://www.quora.com", 150 ],
+                "chartbeat": [ "https://chartbeat.com", 200 ],
+                "duedil": [ "https://www.duedil.com", 150 ],
+                "stitchfix": [ "https://www.stitchfix.com", 190 ]
+            },
+            {
+                "wayblazer": [ "http://wayblazer.com", 200 ],
+                "indico": [ "https://indico.io", 150 ],
+                "chattermill": [ "https://chattermill.io", 175 ],
+                "turi": [ "https://turi.com", 150 ],
+                "kip": [ "http://kipthis.com", 70 ]
+            },
+            {
+                "socrata": [ "https://www.socrata.com", 150 ],
+                "cytora": [ "http://www.cytora.com", 125 ],
+                "signaln": [ "http://signaln.com", 150 ],
+                "wonderflow": [ "http://www.wonderflow.co", 200 ],
+                "synapsify": [ "http://www.gosynapsify.com", 150 ]
+            }
+        ]
+    },
+
+    "robots.txt": {
+        "layout": false
+    },
+
+    "404": {
+        "title": "404 Error",
+        "landing": true
+    },
+
+    "announcement" : {
+        "title": "Important Announcement"
+    }
+}

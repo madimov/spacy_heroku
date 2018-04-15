@@ -1,0 +1,69 @@
+//- 💫 CSS > COMPONENTS > CODE
+
+//- Code block
+
+.c-code-block
+    background: $color-front
+    color: $color-back
+    padding: 0.75em 0
+    border-radius: 2px
+    overflow: auto
+    width: 100%
+    max-width: 100%
+    white-space: pre
+    direction: ltr
+
+
+//- Code block content
+
+.c-code-block__content
+    display: block
+    font: normal normal 1.1rem/#{2} $font-code
+    padding: 1em 2em
+
+
+//- Inline code
+
+*:not(.c-code-block) > code
+    font: normal 600 0.8em/#{1} $font-code
+    background: $color-subtle-light
+    color: $color-front
+    padding: 0.1em 0.5em
+    margin: 0
+    border-radius: 1px
+
+    .c-aside__content &
+        background: lighten($color-front, 10)
+        color: $color-back
+
+
+//- Syntax Highlighting
+
+[class*="language-"] .token
+    &.comment, &.prolog, &.doctype, &.cdata, &.punctuation
+        color: map-get($syntax-highlighting, comment)
+
+    &.property, &.tag, &.constant, &.symbol, &.deleted
+        color: map-get($syntax-highlighting, tag)
+
+    &.boolean, &.number
+        color: map-get($syntax-highlighting, number)
+
+    &.selector, &.attr-name, &.string, &.char, &.builtin, &.inserted
+        color: map-get($syntax-highlighting, selector)
+
+    @at-root .language-css .token.string,
+    &.operator, &.entity, &.url, &.variable
+        color: map-get($syntax-highlighting, operator)
+
+    &.atrule, &.attr-value, &.function
+        color: map-get($syntax-highlighting, function)
+
+    &.regex, &.important
+        color: map-get($syntax-highlighting, regex)
+
+    &.keyword
+        color: map-get($syntax-highlighting, keyword)
+
+    &.italic
+        font-style: italic

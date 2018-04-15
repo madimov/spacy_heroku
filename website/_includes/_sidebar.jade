@@ -1,0 +1,13 @@
+//- 💫 INCLUDES > SIDEBAR
+
+include _mixins
+
+menu.c-sidebar.js-sidebar.u-text
+    if sidebar_content
+        each items, menu in sidebar_content
+            ul.c-sidebar__section.o-block
+                li.u-text-label.u-color-subtle=menu
+
+                each url, item in items
+                    li(class=(CURRENT == url || (CURRENT == "index" && url == "./")) ? "is-active" : null)
+                        +a(url)=item
